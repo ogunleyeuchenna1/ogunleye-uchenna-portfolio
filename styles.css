@@ -17,6 +17,8 @@
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: 92px; }
+.icon-definitions { position: absolute; width: 0; height: 0; overflow: hidden; }
+.icon-arrow { display: block; width: 1em; height: 1em; flex: 0 0 auto; }
 body {
   margin: 0;
   overflow-x: clip;
@@ -203,12 +205,13 @@ h1, h2, h3 { font-family: var(--font-display); }
 .text-link { display: inline-flex; align-items: center; gap: 8px; color: #d0c0ff; font-size: 10px; font-weight: 600; }
 .expertise-panel { padding: 27px 27px 23px; border: 1px solid var(--line); border-radius: 12px; background: linear-gradient(145deg, rgba(31, 26, 62, .8), rgba(21, 18, 44, .7)); }
 .expertise-heading { display: flex; justify-content: space-between; align-items: center; margin-bottom: 11px; }
-.expertise-symbol { color: var(--purple-bright); font-size: 18px; }
+.expertise-symbol { width: 18px; height: 18px; color: var(--purple-bright); }
 .expertise-row { display: grid; grid-template-columns: 30px 1fr 16px; gap: 11px; align-items: start; padding: 17px 0; border-top: 1px solid var(--line); }
 .expertise-index { padding-top: 3px; color: #82799f; font: 500 10px var(--font-display); }
 .expertise-row h3 { margin: 0 0 4px; font-size: 13px; font-weight: 500; }
 .expertise-row p { margin: 0; color: var(--muted-dim); font-size: 10px; line-height: 1.6; }
 .expertise-arrow { color: #9c86d5; font-size: 13px; }
+.expertise-arrow .icon-arrow { width: 14px; height: 14px; }
 .tech-stack { padding-top: 17px; border-top: 1px solid var(--line); }
 .tech-stack .tag-list { margin-top: 12px; }
 
