@@ -83,13 +83,78 @@
 
         <div class="project-grid">
           <article class="project-card project-featured" data-reveal>
+            <a class="project-visual site-preview" href="https://agreonpay.com.ng/" target="_blank" rel="noreferrer" aria-label="View AgroPay live website">
+              <img src="agreonpay-preview.png" alt="Screenshot preview of the AgroPay farm-to-market website">
+              <span class="preview-label"><span class="preview-dot"></span> LIVE SITE PREVIEW <span aria-hidden="true"><svg class="icon-arrow"><use href="#icon-arrow-up-right"></use></svg></span></span>
+            </a>
+            <div class="project-info">
+              <div>
+                <span class="project-number">01 / AGRI-TECH &amp; FINTECH</span>
+                <h3>AGROPAY</h3>
+                <p>A farm-to-market and payment platform built with Jek Farms to connect growers, fresh produce, and customers.</p>
+                <details class="project-details">
+                  <summary>Technical details, challenges &amp; solutions</summary>
+                  <div class="project-detail-content">
+                    <p class="project-meta"><strong>Role:</strong> Full-Stack Developer · <strong>Partner:</strong> Jek Farms<br><strong>Stack:</strong> React Native, Node.js / PHP, MySQL, OpenAI API, Stripe and local payment gateways.</p>
+                    <h4>Engineering highlights</h4>
+                    <ul>
+                      <li>Marketplace catalog for organic and conventional goods from Jek Farms and verified vendors, with real-time inventory and direct farmer-to-customer communication.</li>
+                      <li>Checkout supports bank transfers, debit cards, crypto, and in-app micro-credit; order tracking accounts for cold-chain delivery windows.</li>
+                      <li>OpenAI-powered recommendations, seasonal availability notifications, and smart pricing insights.</li>
+                    </ul>
+                    <h4>Challenge &amp; solution</h4>
+                    <p><strong>Challenge:</strong> Live delivery-route calculations across multiple farm branches slowed checkout.</p>
+                    <p><strong>Solution:</strong> Optimize MySQL indexes and cache frequently used region-to-farm distances in Redis, reducing checkout load times to under 50ms.</p>
+                  </div>
+                </details>
+              </div>
+              <div class="project-bottom">
+                <div class="tag-list"><span>React Native</span><span>PHP</span><span>MySQL</span><span>Stripe</span></div>
+                <a class="project-link" href="https://agreonpay.com.ng/" target="_blank" rel="noreferrer">Visit live site <span aria-hidden="true"><svg class="icon-arrow"><use href="#icon-arrow-up-right"></use></svg></span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <a class="project-visual site-preview" href="https://getlinkpad.vercel.app/" target="_blank" rel="noreferrer" aria-label="View LinkPad live website">
+              <img src="linkpad-preview.png" alt="Screenshot preview of the LinkPad cross-device transfer website">
+              <span class="preview-label"><span class="preview-dot"></span> LIVE SITE PREVIEW <span aria-hidden="true"><svg class="icon-arrow"><use href="#icon-arrow-up-right"></use></svg></span></span>
+            </a>
+            <div class="project-info">
+              <div>
+                <span class="project-number">02 / PRODUCTIVITY</span>
+                <h3>LINKPAD</h3>
+                <p>A browser-based companion for moving files, sharing clipboard text, and typing across devices.</p>
+                <details class="project-details">
+                  <summary>Technical details, challenges &amp; solutions</summary>
+                  <div class="project-detail-content">
+                    <p class="project-meta"><strong>Role:</strong> Full-Stack Developer &amp; Systems Architect<br><strong>Stack:</strong> Next.js / React, Node.js, Socket.io / WebSockets / WebRTC, Redis, Tailwind CSS.</p>
+                    <h4>Engineering highlights</h4>
+                    <ul>
+                      <li>Transfers photos, documents, and archives with live progress, and syncs clipboard text between devices.</li>
+                      <li>Turns a phone into a remote laptop keyboard, with QR-code or short-code pairing and no desktop install.</li>
+                    </ul>
+                    <h4>Challenges &amp; solutions</h4>
+                    <p><strong>Lag over unstable connections:</strong> Event debouncing and lightweight WebSocket payloads bring keystroke latency below 20ms on local networks.</p>
+                    <p><strong>Large-file memory use:</strong> ReadableStream processing and chunked ArrayBuffers stream files over sockets without loading the entire transfer into browser memory.</p>
+                  </div>
+                </details>
+              </div>
+              <div class="project-bottom">
+                <div class="tag-list"><span>Next.js</span><span>Socket.io</span><span>WebRTC</span></div>
+                <a class="project-link" href="https://getlinkpad.vercel.app/" target="_blank" rel="noreferrer">Visit live site <span aria-hidden="true"><svg class="icon-arrow"><use href="#icon-arrow-up-right"></use></svg></span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal>
             <a class="project-visual site-preview nova-preview" href="https://novamart.byethost6.com/fintech-main/shop" target="_blank" rel="noreferrer" aria-label="View NOVA MART live website">
               <img src="novamart-preview.png" alt="Screenshot preview of the NOVA MART online electronics store">
               <span class="preview-label"><span class="preview-dot"></span> LIVE SITE PREVIEW <span aria-hidden="true"><svg class="icon-arrow"><use href="#icon-arrow-up-right"></use></svg></span></span>
             </a>
             <div class="project-info">
               <div>
-                <span class="project-number">01 / E-COMMERCE</span>
+                <span class="project-number">03 / E-COMMERCE</span>
                 <h3>NOVA MART</h3>
                 <p>A full-stack tech retailer built for fast product discovery, reliable checkout, and a polished shopping experience.</p>
                 <details class="project-details">
@@ -121,7 +186,7 @@
             </a>
             <div class="project-info">
               <div>
-                <span class="project-number">02 / WELLNESS</span>
+                <span class="project-number">04 / WELLNESS</span>
                 <h3>ONNE</h3>
                 <p>A multi-location massage and wellness booking platform for managing appointments, therapists, and rooms.</p>
                 <details class="project-details">
@@ -154,7 +219,7 @@
             </a>
             <div class="project-info">
               <div>
-                <span class="project-number">03 / FINTECH</span>
+                <span class="project-number">05 / FINTECH</span>
                 <h3>VERTEXGOLD</h3>
                 <p>A trading platform for monitoring market activity and strategies with real-time performance charts.</p>
                 <details class="project-details">
@@ -176,71 +241,6 @@
               <div class="project-bottom">
                 <div class="tag-list"><span>Next.js</span><span>Redis</span><span>WebSockets</span><span>Stripe</span></div>
                 <a class="project-link" href="https://vertexgold.freehosting.dev/" target="_blank" rel="noreferrer">Visit live site <span aria-hidden="true"><svg class="icon-arrow"><use href="#icon-arrow-up-right"></use></svg></span></a>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card" data-reveal>
-            <a class="project-visual site-preview" href="https://getlinkpad.vercel.app/" target="_blank" rel="noreferrer" aria-label="View LinkPad live website">
-              <img src="linkpad-preview.png" alt="Screenshot preview of the LinkPad cross-device transfer website">
-              <span class="preview-label"><span class="preview-dot"></span> LIVE SITE PREVIEW <span aria-hidden="true"><svg class="icon-arrow"><use href="#icon-arrow-up-right"></use></svg></span></span>
-            </a>
-            <div class="project-info">
-              <div>
-                <span class="project-number">04 / PRODUCTIVITY</span>
-                <h3>LINKPAD</h3>
-                <p>A browser-based companion for moving files, sharing clipboard text, and typing across devices.</p>
-                <details class="project-details">
-                  <summary>Technical details, challenges &amp; solutions</summary>
-                  <div class="project-detail-content">
-                    <p class="project-meta"><strong>Role:</strong> Full-Stack Developer &amp; Systems Architect<br><strong>Stack:</strong> Next.js / React, Node.js, Socket.io / WebSockets / WebRTC, Redis, Tailwind CSS.</p>
-                    <h4>Engineering highlights</h4>
-                    <ul>
-                      <li>Transfers photos, documents, and archives with live progress, and syncs clipboard text between devices.</li>
-                      <li>Turns a phone into a remote laptop keyboard, with QR-code or short-code pairing and no desktop install.</li>
-                    </ul>
-                    <h4>Challenges &amp; solutions</h4>
-                    <p><strong>Lag over unstable connections:</strong> Event debouncing and lightweight WebSocket payloads bring keystroke latency below 20ms on local networks.</p>
-                    <p><strong>Large-file memory use:</strong> ReadableStream processing and chunked ArrayBuffers stream files over sockets without loading the entire transfer into browser memory.</p>
-                  </div>
-                </details>
-              </div>
-              <div class="project-bottom">
-                <div class="tag-list"><span>Next.js</span><span>Socket.io</span><span>WebRTC</span></div>
-                <a class="project-link" href="https://getlinkpad.vercel.app/" target="_blank" rel="noreferrer">Visit live site <span aria-hidden="true"><svg class="icon-arrow"><use href="#icon-arrow-up-right"></use></svg></span></a>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card" data-reveal>
-            <a class="project-visual site-preview" href="https://agreonpay.com.ng/" target="_blank" rel="noreferrer" aria-label="View Agreonpay live website">
-              <img src="agreonpay-preview.png" alt="Screenshot preview of the Agreonpay farm-to-market website">
-              <span class="preview-label"><span class="preview-dot"></span> LIVE SITE PREVIEW <span aria-hidden="true"><svg class="icon-arrow"><use href="#icon-arrow-up-right"></use></svg></span></span>
-            </a>
-            <div class="project-info">
-              <div>
-                <span class="project-number">05 / AGRI-TECH</span>
-                <h3>AGREONPAY</h3>
-                <p>A farm-to-market platform built with Jek Farms to connect growers, fresh produce, and customers.</p>
-                <details class="project-details">
-                  <summary>Technical details, challenges &amp; solutions</summary>
-                  <div class="project-detail-content">
-                    <p class="project-meta"><strong>Role:</strong> Full-Stack Developer · <strong>Partner:</strong> Jek Farms<br><strong>Stack:</strong> React Native, Node.js / PHP, MySQL, OpenAI API, Stripe and local payment gateways.</p>
-                    <h4>Engineering highlights</h4>
-                    <ul>
-                      <li>Marketplace catalog for organic and conventional goods from Jek Farms and verified vendors, with real-time inventory and direct farmer-to-customer communication.</li>
-                      <li>Checkout supports bank transfers, debit cards, crypto, and in-app micro-credit; order tracking accounts for cold-chain delivery windows.</li>
-                      <li>OpenAI-powered recommendations, seasonal availability notifications, and smart pricing insights.</li>
-                    </ul>
-                    <h4>Challenge &amp; solution</h4>
-                    <p><strong>Challenge:</strong> Live delivery-route calculations across multiple farm branches slowed checkout.</p>
-                    <p><strong>Solution:</strong> Optimize MySQL indexes and cache frequently used region-to-farm distances in Redis, reducing checkout load times to under 50ms.</p>
-                  </div>
-                </details>
-              </div>
-              <div class="project-bottom">
-                <div class="tag-list"><span>React Native</span><span>PHP</span><span>MySQL</span></div>
-                <a class="project-link" href="https://agreonpay.com.ng/" target="_blank" rel="noreferrer">Visit live site <span aria-hidden="true"><svg class="icon-arrow"><use href="#icon-arrow-up-right"></use></svg></span></a>
               </div>
             </div>
           </article>
